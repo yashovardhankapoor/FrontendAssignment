@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Description
 
-## Available Scripts
+This is a React-based application that allows users to interact with PDF documents via a chat interface. The application consists of three main components:
 
-In the project directory, you can run:
+- Sidebar: For selecting and managing PDF files.
+- Preview: For viewing the contents of the selected PDF.
+- Chat: For conversing with an AI or chatbot about the PDF contents.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Interactive PDF viewer
+- Resizable layout components
+- Sidebar for file selection
+- Chat interface for AI interactions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Installation
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 18.3.1 or higher)
 
-### `npm run build`
+### Clone the repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/username/frontend-assignment.git
+cd frontend-assignment
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install depedencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Start the project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application will start a development server and open the project in your default web browser. By default, it will be accessible at http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Configuration
 
-## Learn More
+No additional configuration is required to get started. Ensure that you have the necessary dependencies installed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## File Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- src/: Contains source code files
+- components/: Contains React components such as Sidebar, Preview, and Chat
+- styles/: Contains SCSS files for styling
+- public/: Contains public assets such as the HTML template
+- package.json: Contains project metadata and dependencies
+- README.md: This README file
 
-### Code Splitting
+## Examples
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Here’s a basic example of how the layout looks:
 
-### Analyzing the Bundle Size
+- Sidebar: Allows file selection and management.
+- Preview: Displays the selected PDF.
+- Chat: Provides an interface for chatting with an AI about the PDF.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Contributing
 
-### Making a Progressive Web App
+If you would like to contribute to this project, please follow these guidelines:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/YourFeature).
+3. Commit your changes (git commit -am 'Add some feature').
+4. Push to the branch (git push origin feature/YourFeature).
+5. Create a new Pull Request.
 
-### Advanced Configuration
+# License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Contact
 
-### Deployment
+# Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Libraries and Tools:
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [CoreUI](https://coreui.io/)
+- [Material UI](https://mui.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Framer Motion]()
+- [React PDF](https://github.com/wojtekmaj/react-pdf)
+- [Re-Resizable](https://github.com/bokuweb/re-resizable)

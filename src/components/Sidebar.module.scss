@@ -1,0 +1,115 @@
+.sidebar {
+  width: 17%;
+  border-right: 1px solid #ddd;
+  padding: 16px;
+  background-color: #2c3e50;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+
+  .sidebarContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newChatButton {
+    margin-bottom: 16px;
+    font-size: 20px;
+    padding: 20px 55px;
+    border: 2px dotted #fff;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(0.95);
+    }
+
+    .mainText {
+      margin-bottom: 8px;
+    }
+
+    .subText {
+      font-size: 12px;
+      font-weight: normal;
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .smallButton {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px transparent;
+    background-color: transparent;
+    color: #fff;
+    font-weight: lighter;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(0.95);
+    }
+  }
+
+  .upgradeButton {
+    border-color: #f39c12;
+    background-color: #f39c12;
+    color: #fff;
+  }
+
+  .newFolderButton {
+    border-color: #2ecc71;
+    background-color: #2ecc71;
+    color: #fff;
+  }
+
+  .fileItem {
+    color: #fff;
+    margin-top: 8px;
+    padding: 10px 55px;
+    font-size: small;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(0.95);
+    }
+  }
+}
