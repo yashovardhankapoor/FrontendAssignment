@@ -12,14 +12,34 @@
 .chatContent {
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column-reverse; /* Display the latest messages at the top */
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid #ddd;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
   margin-bottom: 20px;
+  overflow-y: auto;
+  max-height: 60vh; /* Adjust as needed */
+}
+
+.userMessage {
+  align-self: flex-start;
+  background-color: #d1e7dd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+.botMessage {
+  align-self: flex-end;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
 }
 
 .chatInputContainer {

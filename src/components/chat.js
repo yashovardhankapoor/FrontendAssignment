@@ -1,8 +1,26 @@
-import React from 'react';
-import styles from './chat.module.scss';
-import ChatHeader from './chatHeader';
+import React, { useState } from "react";
+import styles from "./chat.module.scss";
+import ChatHeader from "./chatHeader";
 
 const Chat = () => {
+  const [messages, setMessages] = useState([]);
+  const [inputValue, setInputValue] = useState("");
+
+  const handleSendMessage = (e) => {
+    e.preventDefault();
+    if (inputValue.trim()) {
+      // Update the messages state with the user's message and the bot's reply
+      const newMessages = [
+        { text: inputValue, sender: "user" },
+        { text: inputValue, sender: "bot" },
+      ];
+      setMessages([...newMessages, ...messages]);
+
+      // Clear the input field
+      setInputValue("");
+    }
+  };
+
   return (
     <div className={styles.chatContainer}>
       <ChatHeader />
@@ -20,14 +38,33 @@ const Chat = () => {
         </h7>
       </div>
       <div className={styles.chatContent}>
-        <p>Your chat messages will appear here.</p>
+        {messages.length === 0 ? (
+          <p>Your chat messages will appear here.</p>
+        ) : (
+          messages.map((message, index) => (
+            <div
+              key={index}
+              className={
+                message.sender === "user"
+                  ? styles.userMessage
+                  : styles.botMessage
+              }
+            >
+              {message.text}
+            </div>
+          ))
+        )}
       </div>
       <div className={styles.chatInputContainer}>
-        <input
-          type="text"
-          className={styles.chatInput}
-          placeholder="Ask any question..."
-        />
+        <form onSubmit={handleSendMessage} style={{ width: "100%" }}>
+          <input
+            type="text"
+            className={styles.chatInput}
+            placeholder="Ask any question..."
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
+        </form>
       </div>
     </div>
   );
