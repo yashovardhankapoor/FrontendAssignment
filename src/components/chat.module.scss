@@ -12,7 +12,7 @@
 .chatContent {
   flex-grow: 1;
   display: flex;
-  flex-direction: column-reverse; /* Display the latest messages at the top */
+  flex-direction: column-reverse; 
   justify-content: flex-start;
   align-items: center;
   border: 1px solid #ddd;
@@ -21,7 +21,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   overflow-y: auto;
-  max-height: 60vh; /* Adjust as needed */
+  max-height: 60vh;
 }
 
 .userMessage {

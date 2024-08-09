@@ -9,14 +9,12 @@ const Chat = () => {
   const handleSendMessage = (e) => {
     e.preventDefault();
     if (inputValue.trim()) {
-      // Update the messages state with the user's message and the bot's reply
       const newMessages = [
         { text: inputValue, sender: "user" },
         { text: inputValue, sender: "bot" },
       ];
       setMessages([...newMessages, ...messages]);
 
-      // Clear the input field
       setInputValue("");
     }
   };
