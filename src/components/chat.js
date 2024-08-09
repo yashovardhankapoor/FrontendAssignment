@@ -37,7 +37,7 @@ const Chat = () => {
       </div>
       <div className={styles.chatContent}>
         {messages.length === 0 ? (
-          <p>Your chat messages will appear here.</p>
+          <p className={styles.chatText}>Your chat messages will appear here.</p>
         ) : (
           messages.map((message, index) => (
             <div
